@@ -75,10 +75,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/auto-pairs"
   },
-  ["barbar.nvim"] = {
-    loaded = true,
-    path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/barbar.nvim"
-  },
   ["blamer.nvim"] = {
     loaded = true,
     path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/blamer.nvim"
@@ -118,6 +114,10 @@ _G.packer_plugins = {
   neoformat = {
     loaded = true,
     path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/neoformat"
+  },
+  ["nvim-bufferline.lua"] = {
+    loaded = true,
+    path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,

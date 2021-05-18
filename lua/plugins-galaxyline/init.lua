@@ -47,7 +47,7 @@ gls.left[4] = {
     provider = {'FileName','FileSize'},
     condition = buffer_not_empty,
     separator = '',
-    separator_highlight = {Colors.base03,Colors.base00},
+    separator_highlight = {Colors.base04,Colors.base00},
     highlight = {Colors.base07,Colors.base00}               -- Unsure
   }
 }
@@ -56,14 +56,14 @@ gls.left[5] = {
   GitIcon = {
     provider = function() return '  ' end,
     condition = buffer_not_empty,
-    highlight = {Colors.base09,Colors.base03},
+    highlight = {Colors.base09,Colors.base04},
   }
 }
 gls.left[6] = {
   GitBranch = {
     provider = 'GitBranch',
     condition = buffer_not_empty,
-    highlight = {Colors.base07,Colors.base03},
+    highlight = {Colors.base07,Colors.base04},
   }
 }
 
@@ -80,31 +80,31 @@ gls.left[7] = {
     provider = 'DiffAdd',
     condition = checkwidth,
     icon = '   ',
-    highlight = {Colors.base0B,Colors.base03},
+    highlight = {Colors.base0B,Colors.base04},
   }
 }
 gls.left[8] = {
   DiffModified = {
     provider = 'DiffModified',
     condition = checkwidth,
-    icon = ' ',
-    highlight = {Colors.base09,Colors.base03},
+    icon = '   ',
+    highlight = {Colors.base09,Colors.base04},
   }
 }
 gls.left[9] = {
   DiffRemove = {
     provider = 'DiffRemove',
     condition = checkwidth,
-    icon = ' ',
-    highlight = {Colors.base08,Colors.base03},
+    icon = '   ',
+    highlight = {Colors.base08,Colors.base04},
   }
 }
 gls.left[10] = {
   LeftEnd = {
     provider = function() return '' end,
     separator = '',
-    separator_highlight = {Colors.base03,Colors.base00},
-    highlight = {Colors.base03,Colors.base03}
+    separator_highlight = {Colors.base04,Colors.base00},
+    highlight = {Colors.base04,Colors.base04}
   }
 }
 gls.left[11] = {
@@ -125,23 +125,23 @@ gls.right[1]= {
   FileFormat = {
     provider = 'FileFormat',
     separator = '',
-    separator_highlight = {Colors.base03,Colors.base00},
-    highlight = {Colors.base07,Colors.base03},
+    separator_highlight = {Colors.base04,Colors.base00},
+    highlight = {Colors.base07,Colors.base04},
   }
 }
 gls.right[2] = {
   LineInfo = {
     provider = 'LineColumn',
     separator = ' | ',
-    separator_highlight = {Colors.base00,Colors.base03},
-    highlight = {Colors.base07,Colors.base03},
+    separator_highlight = {Colors.base00,Colors.base04},
+    highlight = {Colors.base07,Colors.base04},
   },
 }
 gls.right[3] = {
   PerCent = {
     provider = 'LinePercent',
     separator = '',
-    separator_highlight = {Colors.base00,Colors.base03},
+    separator_highlight = {Colors.base00,Colors.base04},
     highlight = {Colors.base07,Colors.base00},
   }
 }
@@ -156,8 +156,8 @@ gls.short_line_left[1] = {
   BufferType = {
     provider = 'FileTypeName',
     separator = '',
-    separator_highlight = {Colors.base03,Colors.base00},
-    highlight = {Colors.base07,Colors.base03}
+    separator_highlight = {Colors.base04,Colors.base00},
+    highlight = {Colors.base07,Colors.base04}
   }
 }
 
@@ -166,7 +166,7 @@ gls.short_line_right[1] = {
   BufferIcon = {
     provider= 'BufferIcon',
     separator = '',
-    separator_highlight = {Colors.base03,Colors.base00},
-    highlight = {Colors.base07,Colors.base03}
+    separator_highlight = {Colors.base04,Colors.base00},
+    highlight = {Colors.base07,Colors.base04}
   }
 }

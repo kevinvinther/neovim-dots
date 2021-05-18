@@ -40,8 +40,8 @@ vim.api.nvim_set_keymap('n', '<Leader>gr', ':Lspsaga rename<CR>', { noremap = tr
 vim.api.nvim_set_keymap('n', '<Leader>K', ':Lspsaga hover_doc<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>gd', ':Lspsaga preview_definition<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>cd', ':Lspsaga show_line_diagnostics<CR>', { noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>æ', ':Lspsaga diagnostic_jump_next<CR>', { noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>ø', ':Lspsaga diagnostic_jump_prev<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'æ', ':Lspsaga diagnostic_jump_next<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'ø', ':Lspsaga diagnostic_jump_prev<CR>', { noremap = true, silent = true})
 
 -- Sets lsp-trouble keybindings
 vim.api.nvim_set_keymap('n', '<Leader>m', ':LspTroubleToggle<CR>', { noremap = true, silent = true})
