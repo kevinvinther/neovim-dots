@@ -17,6 +17,8 @@ Colors.base0C = '#8ec07c'       -- Support, Regular Expressions, Escape Characte
 Colors.base0D = '#76cce0'       -- Functions, Methods, Attribute IDs, Headings
 Colors.base0E = '#55393d'       -- Keywords, Storage, Selector, Markup Italic, Diff Changed
 Colors.base0F = '#d65d0e'       -- Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+Colors.base10 = '#27292e'
+Colors.base11 = '#414248'
 
 -- colors:
 --   primary:

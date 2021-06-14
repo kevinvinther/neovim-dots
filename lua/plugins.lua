@@ -21,7 +21,7 @@ return require('packer').startup(function()
     use 'rust-lang/rust.vim'
     use 'simrat39/rust-tools.nvim'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-    use 'romgrk/barbar.nvim'
+    use 'akinsho/nvim-bufferline.lua'
     use { 'glepnir/galaxyline.nvim', branch = 'main' }
     use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
     use 'nvim-lua/popup.nvim'
@@ -45,5 +45,6 @@ return require('packer').startup(function()
     use "ray-x/lsp_signature.nvim"
     use "folke/which-key.nvim"
     use 'joshdick/onedark.vim'
+    use 'folke/todo-comments.nvim'
 end)
 

@@ -6,9 +6,7 @@ vim.cmd('syntax on ')                           -- Syntax highlighting
 
 vim.o.hidden = true
 
-vim.cmd('set number relativenumber')                     -- No annoying error sounds
--- vim.o.number = true
--- vim.o.relativenumber = true
+vim.cmd('set number relativenumber')
 
 vim.cmd('set noerrorbells')                     -- No annoying error sounds
 vim.cmd('set smartindent')                      -- Something with indentation
