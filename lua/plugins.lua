@@ -47,4 +47,3 @@ return require('packer').startup(function()
     use 'joshdick/onedark.vim'
     use 'folke/todo-comments.nvim'
 end)
-

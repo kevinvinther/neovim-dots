@@ -1,5 +1,6 @@
 require('bufferline').setup{
     options = {
+<<<<<<< HEAD
         numbers = "none",
         number_style = "none",
         mappings = true,
@@ -48,11 +49,22 @@ require('bufferline').setup{
             guibg = Colors.base00,
         },
         indicator_selected = {
-            guifg = Colors.base00,
+            guifg = Colors.base0D,
         },
-        tab_close = {
-            guifg = Colors.base08,
-            guibg = Colors.base00
-        },
+        -- pick_selected = {
+        --     guifg = '<color-value-here>',
+        --     guibg = '<color-value-here>',
+        --     gui = "bold,italic"
+        -- },
+        -- pick_visible = {
+        --     guifg = '<color-value-here>',
+        --     guibg = '<color-value-here>',
+        --     gui = "bold,italic"
+        -- },
+        -- pick = {
+        --     guifg = '<color-value-here>',
+        --     guibg = '<color-value-here>',
+        --     gui = "bold,italic"
+        -- }
     }
 }
