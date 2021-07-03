@@ -8,10 +8,10 @@ if fn.empty(fn.glob(install_path)) > 0 then
   execute 'packadd packer.nvim'
 end
 
+use = use -- To remove the annoying LSP warnings
 
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
-    use 'sainnhe/sonokai'
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
     use 'neovim/nvim-lspconfig'
@@ -23,7 +23,7 @@ return require('packer').startup(function()
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'akinsho/nvim-bufferline.lua'
     use { 'glepnir/galaxyline.nvim', branch = 'main' }
-    use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
+    use {"lukas-reineke/indent-blankline.nvim"}
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
@@ -44,6 +44,10 @@ return require('packer').startup(function()
     use 'simrat39/symbols-outline.nvim'
     use "ray-x/lsp_signature.nvim"
     use "folke/which-key.nvim"
-    use 'joshdick/onedark.vim'
     use 'folke/todo-comments.nvim'
+    -- Colorschemes
+    use 'sainnhe/sonokai'
+    use 'folke/tokyonight.nvim'
+    use "sainnhe/gruvbox-material"
+    use "joshdick/onedark.vim"
 end)

@@ -1,6 +1,5 @@
 require('bufferline').setup{
     options = {
-<<<<<<< HEAD
         numbers = "none",
         number_style = "none",
         mappings = true,
@@ -30,26 +29,25 @@ require('bufferline').setup{
         separator_style = "thick",
         enforce_regular_tabs = false,
         always_show_bufferline = true,
-        sort_by = 'extension'
     },
     highlights = {
-        fill = {
-            guibg = Colors.base04,
-        },
+        -- fill = {
+        --     guibg = Colors.bg0_h,
+        -- },
         separator_selected = {
-            guifg = Colors.base00,
-            guibg = Colors.base00,
+            guifg = Colors.bg0_h,
+            guibg = Colors.bg0_h,
         },
         separator_visible = {
-            guifg = Colors.base00,
-            guibg = Colors.base00,
+            guifg = Colors.bg0_h,
+            guibg = Colors.bg0_h,
         },
         separator = {
-            guifg = Colors.base00,
-            guibg = Colors.base00,
+            guifg = Colors.bg0_h,
+            guibg = Colors.bg0_h,
         },
         indicator_selected = {
-            guifg = Colors.base0D,
+            guifg = Colors.blue,
         },
         -- pick_selected = {
         --     guifg = '<color-value-here>',

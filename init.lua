@@ -42,4 +42,6 @@ require('plugins-lspsignature')
 require('plugins-whichkey')
 require('plugins-todocomments')
 require('plugins-toggleterm')
-require('highlights')
+if(not NonConfigColorscheme) then
+    require('highlights')
+end
