@@ -16,9 +16,10 @@ require('bufferline').setup{
         max_prefix_length = 14, -- prefix used when a buffer is de-duplicated
         tab_size = 18,
         diagnostics = "nvim_lsp",
-        diagnostics_indicator = function(count, level, diagnostics_dict)
-          return "("..count..")"
-        end,
+        offsets = {{filetype = "NvimTree", text=" ", padding=1}},
+        -- diagnostics_indicator = function(count, level, diagnostics_dict)
+        --   return "("..count..")"
+        -- end,
         show_buffer_icons = true, -- disable filetype icons for buffers
         show_buffer_close_icons = true,
         show_close_icon = true,
@@ -30,39 +31,4 @@ require('bufferline').setup{
         enforce_regular_tabs = false,
         always_show_bufferline = true,
     },
-    highlights = {
-        -- fill = {
-        --     guibg = Colors.bg0_h,
-        -- },
-        separator_selected = {
-            guifg = Colors.bg0_h,
-            guibg = Colors.bg0_h,
-        },
-        separator_visible = {
-            guifg = Colors.bg0_h,
-            guibg = Colors.bg0_h,
-        },
-        separator = {
-            guifg = Colors.bg0_h,
-            guibg = Colors.bg0_h,
-        },
-        indicator_selected = {
-            guifg = Colors.blue,
-        },
-        -- pick_selected = {
-        --     guifg = '<color-value-here>',
-        --     guibg = '<color-value-here>',
-        --     gui = "bold,italic"
-        -- },
-        -- pick_visible = {
-        --     guifg = '<color-value-here>',
-        --     guibg = '<color-value-here>',
-        --     gui = "bold,italic"
-        -- },
-        -- pick = {
-        --     guifg = '<color-value-here>',
-        --     guibg = '<color-value-here>',
-        --     gui = "bold,italic"
-        -- }
-    }
 }

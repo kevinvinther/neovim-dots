@@ -11,43 +11,67 @@ end
 use = use -- To remove the annoying LSP warnings
 
 return require('packer').startup(function()
+    -- Package Manager
     use 'wbthomason/packer.nvim'
+
+    -- Icons
     use 'kyazdani42/nvim-web-devicons'
+
+    -- Tree view
     use 'kyazdani42/nvim-tree.lua'
+
+    -- LSP
     use 'neovim/nvim-lspconfig'
-    use 'hrsh7th/nvim-compe'
     use 'glepnir/lspsaga.nvim'
     use 'onsails/lspkind-nvim'
+    use "ray-x/lsp_signature.nvim"
+    use 'folke/lsp-trouble.nvim'
+
+    -- Completion
+    use 'hrsh7th/nvim-compe'
+
+    -- Git
+    use 'lewis6991/gitsigns.nvim'
+    use 'APZelos/blamer.nvim'
+    use 'sindrets/diffview.nvim'
+
+    -- Programming language specific
     use 'rust-lang/rust.vim'
     use 'simrat39/rust-tools.nvim'
+
+    -- Highlighting
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
+    -- Buffers
     use 'akinsho/nvim-bufferline.lua'
-    use { 'glepnir/galaxyline.nvim', branch = 'main' }
+
+    -- Other visual
     use {"lukas-reineke/indent-blankline.nvim"}
+    use 'norcalli/nvim-colorizer.lua'
+    use 'folke/todo-comments.nvim'
+
+    -- Other
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
-    use 'sbdchd/neoformat'
     use 'tpope/vim-commentary'
     use 'andweeb/presence.nvim'
-    use 'lewis6991/gitsigns.nvim'
-    use 'APZelos/blamer.nvim'
     use 'jiangmiao/auto-pairs'
     use 'mbbill/undotree'
-    use 'norcalli/nvim-colorizer.lua'
     use 'glepnir/dashboard-nvim'
     use 'akinsho/nvim-toggleterm.lua'
     use 'kabouzeid/nvim-lspinstall'
-    use 'folke/lsp-trouble.nvim'
     use 'hrsh7th/vim-vsnip'
     use 'hrsh7th/vim-vsnip-integ'
     use 'simrat39/symbols-outline.nvim'
-    use "ray-x/lsp_signature.nvim"
     use "folke/which-key.nvim"
-    use 'folke/todo-comments.nvim'
+
     -- Colorschemes
     use 'sainnhe/sonokai'
     use 'folke/tokyonight.nvim'
     use "sainnhe/gruvbox-material"
     use "joshdick/onedark.vim"
+
+    -- Statusline
+    use 'hoob3rt/lualine.nvim'
 end)

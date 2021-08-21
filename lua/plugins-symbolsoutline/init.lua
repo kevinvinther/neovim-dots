@@ -1,6 +1,7 @@
 vim.g.symbols_outline = {
-    highlight_hovered_item = true,
+    highlight_hovered_item = false,
     show_guides = true,
+    show_numbers = false,
     position = 'right',
     keymaps = {
         close = "<Esc>",

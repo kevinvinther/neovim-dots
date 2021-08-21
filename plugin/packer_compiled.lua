@@ -81,10 +81,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
-  ["galaxyline.nvim"] = {
-    loaded = true,
-    path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -112,6 +108,10 @@ _G.packer_plugins = {
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/kevinvinther/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
   neoformat = {
     loaded = true,

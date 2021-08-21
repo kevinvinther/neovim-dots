@@ -1,3 +1,18 @@
+-- TODO: This breaks the highlights, will have ot be changed.
+-- vim.o.mouse = "nv"                      -- Make mouse usable in normal and visual mode
+-- vim.o.hidden = true                     -- Enable background buffers
+-- vim.o.wrap = false                      -- Disable line wrap
+-- vim.o.ignorecase = true                 -- Ignore case in search
+-- vim.o.smartcase = true                  -- .. Except if you use capitals
+-- vim.o.tabstop = 4                       -- Number of spaces for a tab
+-- vim.o.termguicolors = true              -- True colors
+-- vim.o.number = true                     -- Show line numbers
+-- vim.o.relativenumber = true             -- Show relative line numbers
+-- vim.o.expandtab = true                  -- Uses spaces instead of tabs
+-- vim.o.splitright = true                 -- Split to the right rather than bottom
+-- vim.o.completeopt = "menuone,noselect"  -- For nvim-compe
+-- vim.g.blamer_enabled = 1                -- git blamer
+
 -- I'll find out about this later
 vim.cmd('set colorcolumn=80')                   -- Column at 80 characters
 vim.o.mouse = "nv"

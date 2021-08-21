@@ -1,7 +1,1 @@
-require('lualine').setup{
-    options = {
-        theme = 'auto',
-        section_separators = {'', ''},
-        component_separators = {'', ''}
-    }
-}
+require('lualine').setup {options = {theme = colorscheme}}

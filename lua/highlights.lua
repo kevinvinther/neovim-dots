@@ -1,3 +1,4 @@
+-- NOTE: Nothing needs to be changed here.
 local function change_highlight(highlight, fg_or_bg, color)
     if color == nil then
         print('A color that doesn\'t exist is being used in your highlights file')
@@ -69,20 +70,61 @@ change_highlight('NvimTreeSpecialFile', 'fg', Colors.purple)
 
 change_highlight('NvimTreeImageFile', 'fg', Colors.fg0)
 
-change_highlight('NvimTreeNormal', 'fg', Colors.fg0)
 change_highlight('NvimTreeNormal', 'bg', Colors.bg0_h)
+
+change_highlight('NvimTreeStatuslineNc', 'bg', Colors.bg0_h)
+change_highlight('NvimTreeStatuslineNc', 'fg', Colors.bg0_h)
+change_highlight('NvimTreeEndOfBuffer', 'fg', Colors.bg0_h)
 
 change_highlight('NvimTreeVertSplit', 'fg', Colors.bg0_h)
 change_highlight('NvimTreeVertSplit', 'bg', Colors.bg0_h)
 
+-- TODO: See which of these are actually needed
+-- Bufferline
+change_highlight('BufferLineFill', 'bg', Colors.bg0_h)
+
+change_highlight('BufferLineBackground', 'bg', Colors.bg0_h)
+
+change_highlight('BufferLineBufferVisible', 'bg', Colors.bg0_h)
+
+change_highlight('BufferLineBufferSelected', 'bg', Colors.bg0)
+
+change_highlight('BufferLineTab', 'bg', Colors.bg0)
+change_highlight('BufferLineTabSelected', 'bg', Colors.bg0)
+change_highlight('BufferLineTabClose', 'bg', Colors.bg0)
+
+change_highlight('BufferLineIndicator', 'bg', Colors.bg0_h)
+
+change_highlight('BufferLineSeparator', 'bg', Colors.bg0_h)
+change_highlight('BufferLineSeparatorVisible', 'bg', Colors.bg0_h)
+change_highlight('BufferLineSeparatorSelected', 'bg', Colors.bg0_h)
+
+change_highlight('BufferLineModified', 'bg', Colors.bg0_h)
+change_highlight('BufferLineModifiedVisible', 'bg', Colors.bg0)
+change_highlight('BufferLineModifiedSelected', 'bg', Colors.bg0)
+
+change_highlight('BufferLineCloseButtonVisible', 'bg', Colors.bg0_h)
+change_highlight('BufferLineCloseButton', 'bg', Colors.bg0_h)
+change_highlight('BufferLineCloseButtonSelected', 'bg', Colors.bg0)
+
+change_highlight('BufferLineIndicatorSelected', 'fg', Colors.blue)
+change_highlight('BufferLineIndicatorSelected', 'bg', Colors.bg0)
+
 -- Misc
 
--- change_highlight('LspTroubleNormal', 'bg', Colors.bg0_h)
+-- change_highlight('TroubleNormal', 'bg', Colors.bg0_h)
 
 -- change_highlight('WhichKeyFloat', 'bg', Colors.bg0_h)
 
 -- change_highlight('SignColumnSB', 'bg', Colors.bg0_h)
 -- change_highlight('NormalSB', 'bg', Colors.bg0_h)
+
+-- vim.cmd('hi StatusLine ctermbg=' .. Colors.bg0_h .. ' ctermfg=' .. Colors.bg0_h)
+-- vim.cmd('hi StatusLine guifg=' .. Colors.bg0_h .. ' guibg=' .. Colors.bg0_h)
+
+-- For toggleterm
+-- vim.cmd('hi DarkenedPanel guibg=' .. Colors.bg0_h)
+
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {

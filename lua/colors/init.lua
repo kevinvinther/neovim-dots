@@ -1,9 +1,9 @@
 -- Available colorschemes: (case-sensitive)
     -- gruvbox
     -- sonokai
-    -- tokyonight - doesn't currently support galaxyline
+    -- tokyonight
     -- one dark
-UserColorscheme = "one dark"
+UserColorscheme = "tokyonight"
 
 Colors = {}
 
@@ -120,6 +120,71 @@ elseif (UserColorscheme == "sonokai") then
     vim.cmd([[colorscheme sonokai]])
 elseif(UserColorscheme == "tokyonight") then
     NonConfigColorscheme = true
+    -- none = "NONE"
+    -- bg_dark = "#1f2335",
+    -- bg = "#24283b",
+    -- bg_highlight = "#292e42",
+    -- terminal_black = "#414868",
+    -- fg = "#c0caf5",
+    -- fg_dark = "#a9b1d6",
+    -- fg_gutter = "#3b4261",
+    -- dark3 = "#545c7e",
+    -- comment = "#565f89",
+    -- dark5 = "#737aa2",
+    -- blue0 = "#3d59a1",
+    -- blue = "#7aa2f7",
+    -- cyan = "#7dcfff",
+    -- blue1 = "#2ac3de",
+    -- blue2 = "#0db9d7",
+    -- blue5 = "#89ddff",
+    -- blue6 = "#B4F9F8",
+    -- blue7 = "#394b70",
+    -- magenta = "#bb9af7",
+    -- purple = "#9d7cd8",
+    -- orange = "#ff9e64",
+    -- yellow = "#e0af68",
+    -- green = "#9ece6a",
+    -- green1 = "#73daca",
+    -- green2 = "#41a6b5",
+    -- teal = "#1abc9c",
+    -- red = "#f7768e",
+    -- red1 = "#db4b4b",
+    -- git = { change = "#6183bb", add = "#449dab", delete = "#914c54", conflict = "#bb7a61" },
+    -- gitSigns = { add = "#164846", change = "#394b70", delete = "#823c41" },
+    Colors.bg0_hh           = '#1f2335' -- Much darker background
+    Colors.bg0_h            = '#1f2335' -- Darker background
+    Colors.bg0              = '#24283b' -- Background
+    Colors.bg1              = '#2e334b' -- Light backround
+    Colors.bg2              = '#2e334b' -- Light background 2
+    Colors.bg3              = '#383e5b' -- Lighter background
+    Colors.bg4              = '#383e5b' -- Lighter background 2
+    Colors.bg5              = '#4b547b' -- Lightest background
+    Colors.bg_statusline1   = '#1a202b' -- Statusline, dark
+    Colors.bg_statusline2   = '#242c3b' -- Statusline, normal
+    Colors.bg_statusline3   = '#2e384b' -- Statusline, light
+    Colors.bg_diff_green    = '#73daca'
+    Colors.bg_visual_green  = '#41a6b5'
+    Colors.bg_diff_red      = '#db4b4b'
+    Colors.bg_visual_red    = '#db4b4b'
+    Colors.bg_diff_blue     = '#89ddff'
+    Colors.bg_visual_blue   = '#0db9d7'
+    Colors.bg_visual_yellow = '#e0af68'
+    Colors.bg_current_word  = '#24283b'
+    Colors.fg0              = '#c0caf5'
+    Colors.fg1              = '#a9b1d6'
+    Colors.red              = '#f7768e'
+    Colors.orange           = '#ff9e64'
+    Colors.yellow           = '#e0af68'
+    Colors.green            = '#9ece6a'
+    Colors.aqua             = '#1abc9c'
+    Colors.blue             = '#2ac3de'
+    Colors.purple           = '#9d7cd8'
+    Colors.bg_red           = '#f7768e'
+    Colors.bg_green         = '#9ece6a'
+    Colors.bg_yellow        = '#e0af68'
+    Colors.grey0            = '#4c5479'
+    Colors.grey1            = '#565f89'
+    Colors.grey2            = '#606a99'
     vim.cmd([[colorscheme tokyonight]])
 elseif(UserColorscheme == "one dark") then
     Colors.bg0_hh           = '#121417' -- Much darker background
