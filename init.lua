@@ -7,11 +7,11 @@
 --╚═╝░░╚══╝╚══════╝░╚════╝░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝--
 ----------------------------------------------------
 
--- Load colors
-require('colors')
-
 -- Use external files
 require('plugins')
+
+-- Load colors
+require('colors')
 
 -- Keybindings
 require('keybindings')
@@ -21,7 +21,6 @@ require('settings')
 
 -- Plugin configurations
 require('lsp-config')
-require('plugins-compe')
 require('plugins-nvimtree')
 require('plugins-rusttools')
 require('plugins-treesitter')
@@ -31,9 +30,11 @@ require('plugins-lspkind')
 require('plugins-lspsaga')
 require('plugins-bufferline')
 require('plugins-colorizer')
+
 require('plugins-dashboard')
+-- require('plugins-alphanvim') Currently non-functional
+
 require('plugins-indentline')
-require('plugins-lspinstall')
 require('plugins-lsptrouble')
 require('plugins-symbolsoutline')
 require('plugins-bufferline')

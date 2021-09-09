@@ -39,6 +39,7 @@ vim.api.nvim_set_keymap('n', '<Leader>ca', ':Lspsaga code_action<CR>', { noremap
 vim.api.nvim_set_keymap('n', '<Leader>gr', ':Lspsaga rename<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>K', ':Lspsaga hover_doc<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>gd', ':Lspsaga preview_definition<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>gD', ':lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>cd', ':Lspsaga show_line_diagnostics<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', 'æ', ':Lspsaga diagnostic_jump_next<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', 'ø', ':Lspsaga diagnostic_jump_prev<CR>', { noremap = true, silent = true})

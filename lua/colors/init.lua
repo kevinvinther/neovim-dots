@@ -3,7 +3,10 @@
     -- sonokai
     -- tokyonight
     -- one dark
-UserColorscheme = "tokyonight"
+    -- github dark
+    -- github dim
+    -- github light
+UserColorscheme = "one dark"
 
 Colors = {}
 
@@ -223,6 +226,48 @@ elseif(UserColorscheme == "one dark") then
     Colors.grey2            = '#353a46'
 
     vim.cmd([[colorscheme onedark]])
+elseif(UserColorscheme == "github dark") then
+    Colors.bg0_hh           = '#121417' -- Much darker background
+    Colors.bg0_h            = '#1d2026' -- Darker background
+    Colors.bg0              = '#282c34' -- Background
+    Colors.bg1              = '#333842' -- Light backround
+    Colors.bg2              = '#414550' -- Light background 2
+    Colors.bg3              = '#3e4451' -- Lighter background
+    Colors.bg4              = '#3e4451' -- Lighter background 2
+    Colors.bg5              = '#49515f' -- Lightest background
+    Colors.bg_statusline1   = '#353a46' -- Statusline, dark
+    Colors.bg_statusline2   = '#4b5263' -- Statusline, normal
+    Colors.bg_statusline3   = '#616a80' -- Statusline, light
+    Colors.bg_diff_green    = '#98c379'
+    Colors.bg_visual_green  = '#7db356'
+    Colors.bg_diff_red      = '#E06C75'
+    Colors.bg_visual_red    = '#dc5761'
+    Colors.bg_diff_blue     = '#3398ea'
+    Colors.bg_visual_blue   = '#8fc6f4'
+    Colors.bg_visual_yellow = '#e5c07b'
+    Colors.bg_current_word  = '#333842'
+    Colors.fg0              = '#ABB2BF'
+    Colors.fg1              = '#ABB2BF'
+    Colors.red              = '#fc5d7c'
+    Colors.orange           = '#d19a66'
+    Colors.yellow           = '#e5c07b'
+    Colors.green            = '#98c379'
+    Colors.aqua             = '#98c379'
+    Colors.blue             = '#61afef'
+    Colors.purple           = '#c678dd'
+    Colors.bg_red           = '#fc5d7c'
+    Colors.bg_green         = '#98c379'
+    Colors.bg_yellow        = '#98c379'
+    Colors.grey0            = '#5c6370'
+    Colors.grey1            = '#4b5263'
+    Colors.grey2            = '#353a46'
+    require('github-theme').setup()
+elseif(UserColorscheme == "github dimmed") then
+
+elseif(UserColorscheme == "github light") then
+
+else
+    print("Could not find your ")
 end
 
 -- Template:

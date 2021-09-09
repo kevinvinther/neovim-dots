@@ -4,7 +4,7 @@ local fn = vim.fn
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 
 if fn.empty(fn.glob(install_path)) > 0 then
-  execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
+  fn.system({'git', 'clone', 'https://github.com/wbthomason/packer.nvim', install_path})
   execute 'packadd packer.nvim'
 end
 
@@ -28,7 +28,9 @@ return require('packer').startup(function()
     use 'folke/lsp-trouble.nvim'
 
     -- Completion
-    use 'hrsh7th/nvim-compe'
+    -- use 'hrsh7th/nvim-compe'
+    use { 'ms-jpq/coq_nvim', branch = 'coq'} -- main one
+    use { 'ms-jpq/coq.artifacts', branch= 'artifacts'} -- 9000+ Snippets
 
     -- Git
     use 'lewis6991/gitsigns.nvim'
@@ -58,20 +60,25 @@ return require('packer').startup(function()
     use 'andweeb/presence.nvim'
     use 'jiangmiao/auto-pairs'
     use 'mbbill/undotree'
-    use 'glepnir/dashboard-nvim'
     use 'akinsho/nvim-toggleterm.lua'
     use 'kabouzeid/nvim-lspinstall'
     use 'hrsh7th/vim-vsnip'
     use 'hrsh7th/vim-vsnip-integ'
     use 'simrat39/symbols-outline.nvim'
     use "folke/which-key.nvim"
+    use 'dstein64/nvim-scrollview'
+    use 'glepnir/dashboard-nvim'
+    -- use 'goolord/alpha-nvim'
 
     -- Colorschemes
     use 'sainnhe/sonokai'
     use 'folke/tokyonight.nvim'
     use "sainnhe/gruvbox-material"
     use "joshdick/onedark.vim"
+    use 'projekt0n/github-nvim-theme'
 
     -- Statusline
     use 'hoob3rt/lualine.nvim'
+
+
 end)

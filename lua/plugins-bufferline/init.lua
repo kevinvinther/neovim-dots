@@ -1,11 +1,7 @@
 require('bufferline').setup{
     options = {
         numbers = "none",
-        number_style = "none",
-        mappings = true,
-        -- NOTE: this plugin is designed with this icon in mind,
-        -- and so changing this is NOT recommended, this is intended
-        -- as an escape hatch for people who cannot bear it for whatever reason
+        -- mappings = true,
         indicator_icon = '▎',
         buffer_close_icon = '',
         modified_icon = '●',
