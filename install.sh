@@ -9,7 +9,7 @@ echo "Do you have neovim nightly installed?"
 
 read x
 
-if [ -d ~/.cconfig/nvim/ ]; then
+if [ -d ~/.config/nvim/ ]; then
     echo "Found neovim config folder"
 elif [ "$x" == "n" ]; then 
     echo "If you haven't installed neovim nightly, you can do so by doing:"
