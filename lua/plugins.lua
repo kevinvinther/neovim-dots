@@ -78,7 +78,8 @@ return require('packer').startup(function()
     use 'projekt0n/github-nvim-theme'
 
     -- Statusline
-    use 'hoob3rt/lualine.nvim'
+    -- use 'hoob3rt/lualine.nvim'
+    use 'famiu/feline.nvim'
 
 
 end)

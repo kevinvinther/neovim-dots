@@ -43,7 +43,7 @@ require('plugins-whichkey')
 require('plugins-todocomments')
 require('plugins-toggleterm')
 require('colorscheme')
-require('plugins-lualine')
+require('plugins-feline')
 if(not NonConfigColorscheme) then
     require('highlights')
 end
