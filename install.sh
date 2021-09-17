@@ -1,11 +1,11 @@
-#! /bin/usr/sh
+#!/bin/usr/sh
 
 if [ `whoami` != root ]; then
     echo Please run this script as root or using sudo
     exit
 fi
 
-echo "Do you have neovim nightly installed?"
+echo "Do you have neovim nightly installed? (y/n)"
 
 read x
 
@@ -24,7 +24,7 @@ else
 fi
 
 echo "Copying files to neovim directory"
-cp -r ./ ~/.config/nvim/
+cp -r -v ./ ~/.config/nvim/
 echo "Finished copying files"
 
 echo "Opening Neovim. Follow instructions accordingly"
