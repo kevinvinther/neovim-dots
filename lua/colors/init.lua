@@ -6,7 +6,7 @@
     -- github dark
     -- github dim
     -- github light
-UserColorscheme = "one dark"
+UserColorscheme = "sonokai"
 
 Colors = {}
 
