@@ -13,9 +13,6 @@ require('plugins')
 -- Load colors
 require('colors')
 
--- Keybindings
-require('keybindings')
-
 -- Settings
 require('settings')
 
@@ -30,10 +27,8 @@ require('plugins-lspkind')
 require('plugins-lspsaga')
 require('plugins-bufferline')
 require('plugins-colorizer')
-
 require('plugins-dashboard')
 -- require('plugins-alphanvim') Currently non-functional
-
 require('plugins-indentline')
 require('plugins-lsptrouble')
 require('plugins-symbolsoutline')
@@ -42,8 +37,13 @@ require('plugins-lspsignature')
 require('plugins-whichkey')
 require('plugins-todocomments')
 require('plugins-toggleterm')
+require('plugins-nvimtsautotag')
 require('colorscheme')
 require('plugins-feline')
+require('plugins-nvimlspinstall')
 if(not NonConfigColorscheme) then
     require('highlights')
 end
+
+-- Keybindings:
+require('keybindings')

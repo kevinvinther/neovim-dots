@@ -18,7 +18,7 @@ vim.api.nvim_set_keymap('n', '<Leader>l', '<C-w>l', { silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>t', ':ToggleTerm<CR>', { silent = true })
 
 -- Switch buffer with Ctrl + h, l
-vim.api.nvim_set_keymap('n', '<C-h>', ':bp<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<C-h>', ':bp<CR>', { noremap = false, silent = true})
 vim.api.nvim_set_keymap('n', '<C-l>', ':bn<CR>', { noremap = true, silent = true})
 
 -- Move selected line up or down

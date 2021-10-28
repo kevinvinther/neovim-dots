@@ -6,7 +6,8 @@
     -- github dark
     -- github dim
     -- github light
-UserColorscheme = "sonokai"
+    -- dracula
+UserColorscheme = "dracula"
 
 Colors = {}
 
@@ -266,8 +267,45 @@ elseif(UserColorscheme == "github dimmed") then
 
 elseif(UserColorscheme == "github light") then
 
+elseif(UserColorscheme == 'dracula') then
+	NonConfigColorscheme = true
+    Colors.bg0_hh           = '#121417' -- Much darker background
+    Colors.bg0_h            = '#1d2026' -- Darker background
+    Colors.bg0              = '#282a36' -- Background
+    Colors.bg1              = '#333842' -- Light backround
+    Colors.bg2              = '#414550' -- Light background 2
+    Colors.bg3              = '#3e4451' -- Lighter background
+    Colors.bg4              = '#3e4451' -- Lighter background 2
+    Colors.bg5              = '#49515f' -- Lightest background
+    Colors.bg_statusline1   = '#353a46' -- Statusline, dark
+    Colors.bg_statusline2   = '#4b5263' -- Statusline, normal
+    Colors.bg_statusline3   = '#616a80' -- Statusline, light
+    Colors.bg_diff_green    = '#50fa7b'
+    Colors.bg_visual_green  = '#50fa7b'
+    Colors.bg_diff_red      = '#ff5555'
+    Colors.bg_visual_red    = '#ff5555'
+    Colors.bg_diff_blue     = '#6272a4'
+    Colors.bg_visual_blue   = '#6272a4'
+    Colors.bg_visual_yellow = '#f1fa8c'
+    Colors.bg_current_word  = '#333842'
+    Colors.fg0              = '#f8f8f2'
+    Colors.fg1              = '#f8f8f2'
+    Colors.red              = '#ff5555'
+    Colors.orange           = '#ffb86c'
+    Colors.yellow           = '#f1fa8c'
+    Colors.green            = '#50fa7b'
+    Colors.aqua             = '#98c379'
+    Colors.blue             = '#8be9fd'
+    Colors.purple           = '#bd93f9'
+    Colors.bg_red           = '#ff5555'
+    Colors.bg_green         = '#50fa7b'
+    Colors.bg_yellow        = '#50fa7b'
+    Colors.grey0            = '#44475a'
+    Colors.grey1            = '#44475a'
+    Colors.grey2            = '#282a36'
+    vim.cmd([[colorscheme dracula]])
 else
-    print("Could not find your ")
+    print("Could not find your desired colorscheme")
 end
 
 -- Template:

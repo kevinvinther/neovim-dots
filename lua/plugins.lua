@@ -24,8 +24,10 @@ return require('packer').startup(function()
     use 'neovim/nvim-lspconfig'
     use 'glepnir/lspsaga.nvim'
     use 'onsails/lspkind-nvim'
-    use "ray-x/lsp_signature.nvim"
+    use 'ray-x/lsp_signature.nvim'
     use 'folke/lsp-trouble.nvim'
+    -- use 'kabouzeid/nvim-lspinstall'
+    use 'williamboman/nvim-lsp-installer'
 
     -- Completion
     -- use 'hrsh7th/nvim-compe'
@@ -61,7 +63,6 @@ return require('packer').startup(function()
     use 'jiangmiao/auto-pairs'
     use 'mbbill/undotree'
     use 'akinsho/nvim-toggleterm.lua'
-    use 'kabouzeid/nvim-lspinstall'
     use 'hrsh7th/vim-vsnip'
     use 'hrsh7th/vim-vsnip-integ'
     use 'simrat39/symbols-outline.nvim'
@@ -76,10 +77,13 @@ return require('packer').startup(function()
     use "sainnhe/gruvbox-material"
     use "joshdick/onedark.vim"
     use 'projekt0n/github-nvim-theme'
+    use 'Mofiqul/dracula.nvim'
 
     -- Statusline
     -- use 'hoob3rt/lualine.nvim'
     use 'famiu/feline.nvim'
 
+    -- Autoclose tags
+    use 'windwp/nvim-ts-autotag'
 
 end)

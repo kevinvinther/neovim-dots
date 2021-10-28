@@ -14,7 +14,8 @@ end
 
 vim.cmd('hi clear SignColumn')
 vim.cmd('hi clear CursorLine')
-vim.cmd('hi clear CursorLineNR')
+change_highlight('CursorLineNR', 'fg', Colors.fg0)
+vim.cmd('set cursorline')
 vim.cmd('hi VertSplit guifg=' .. Colors.grey0)
 vim.cmd('set signcolumn=yes')
 vim.cmd('hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg')
@@ -110,20 +111,6 @@ change_highlight('BufferLineCloseButtonSelected', 'bg', Colors.bg0)
 change_highlight('BufferLineIndicatorSelected', 'fg', Colors.blue)
 change_highlight('BufferLineIndicatorSelected', 'bg', Colors.bg0)
 
--- Misc
-
--- change_highlight('TroubleNormal', 'bg', Colors.bg0_h)
-
--- change_highlight('WhichKeyFloat', 'bg', Colors.bg0_h)
-
--- change_highlight('SignColumnSB', 'bg', Colors.bg0_h)
--- change_highlight('NormalSB', 'bg', Colors.bg0_h)
-
--- vim.cmd('hi StatusLine ctermbg=' .. Colors.bg0_h .. ' ctermfg=' .. Colors.bg0_h)
--- vim.cmd('hi StatusLine guifg=' .. Colors.bg0_h .. ' guibg=' .. Colors.bg0_h)
-
--- For toggleterm
--- vim.cmd('hi DarkenedPanel guibg=' .. Colors.bg0_h)
 
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(

@@ -14,7 +14,7 @@
 -- vim.g.blamer_enabled = 1                -- git blamer
 
 -- I'll find out about this later
-vim.cmd('set colorcolumn=80')                   -- Column at 80 characters
+--vim.cmd('set colorcolumn=80')                   -- Column at 80 characters
 vim.o.mouse = "nv"
 
 vim.cmd('syntax on ')                           -- Syntax highlighting
@@ -35,10 +35,10 @@ vim.cmd('set undodir=~/.config/nvim/undodir')   -- Sets undo directory
 vim.cmd('set undofile')                         -- guess it just enables
 vim.cmd('set incsearch')                        -- ?
 vim.o.incsearch = true
-vim.cmd('set tabstop=4')                        -- make tabs behave likes spaces
-vim.cmd('set shiftwidth=4')
-vim.cmd('set softtabstop=4')
-vim.cmd('set expandtab')
+-- vim.cmd('set tabstop=4')                        -- make tabs behave likes spaces
+-- vim.cmd('set shiftwidth=4')
+-- vim.cmd('set softtabstop=4')
+-- vim.cmd('set expandtab')
 
 vim.o.termguicolors = true
 
