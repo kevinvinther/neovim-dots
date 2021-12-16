@@ -7,7 +7,7 @@
     -- github dim
     -- github light
     -- dracula
-UserColorscheme = "dracula"
+UserColorscheme = "sonokai"
 
 Colors = {}
 

@@ -22,7 +22,8 @@ return require('packer').startup(function()
 
     -- LSP
     use 'neovim/nvim-lspconfig'
-    use 'glepnir/lspsaga.nvim'
+    -- use 'glepnir/lspsaga.nvim'
+    use 'tami5/lspsaga.nvim' -- new fork
     use 'onsails/lspkind-nvim'
     use 'ray-x/lsp_signature.nvim'
     use 'folke/lsp-trouble.nvim'
@@ -31,8 +32,8 @@ return require('packer').startup(function()
 
     -- Completion
     -- use 'hrsh7th/nvim-compe'
-    use { 'ms-jpq/coq_nvim', branch = 'coq'} -- main one
-    use { 'ms-jpq/coq.artifacts', branch= 'artifacts'} -- 9000+ Snippets
+    -- use { 'ms-jpq/coq_nvim', branch = 'coq'} -- main one
+    -- use { 'ms-jpq/coq.artifacts', branch= 'artifacts'} -- 9000+ Snippets
 
     -- Git
     use 'lewis6991/gitsigns.nvim'
@@ -85,5 +86,11 @@ return require('packer').startup(function()
 
     -- Autoclose tags
     use 'windwp/nvim-ts-autotag'
+
+    -- Rainbow Brackets
+    use 'p00f/nvim-ts-rainbow'
+
+    -- Copilot
+    use 'github/copilot.vim'
 
 end)

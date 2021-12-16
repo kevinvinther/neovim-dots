@@ -41,6 +41,7 @@ require('plugins-nvimtsautotag')
 require('colorscheme')
 require('plugins-feline')
 require('plugins-nvimlspinstall')
+require('plugins-nvimtsrainbow')
 if(not NonConfigColorscheme) then
     require('highlights')
 end
