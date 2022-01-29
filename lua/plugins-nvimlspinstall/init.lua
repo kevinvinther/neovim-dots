@@ -25,44 +25,10 @@
 local lsp_installer = require("nvim-lsp-installer")
 local lsp_installer_servers = require("nvim-lsp-installer/servers")
 
-local server_available, requested_server = lsp_installer_servers.get_server("rust_analyzer")
-
-if server_available then
-    local opts = {
-        tools = {
-            autoSetHints = true,
-            hover_with_actions = false,
-            inlay_hints = {
-                show_parameter_hints = true,
-                parameter_hints_prefix = "",
-                other_hints_prefix = "",
-            },
-        },
-        server = {
-            cmd = requested_server._default_options.cmd,
-            settings = {
-                ["rust-analyzer"] = {
-                    completion = {
-                        postfix = {
-                            enable = false
-                        }
-                    },
-                    checkOnSave = {
-                        command = "clippy"
-                    },
-                }
-            }
-        },
-    }
-    require("rust-tools").setup(opts)
-end
+-- local server_available, requested_server = lsp_installer_servers.get_server("rust_analyzer")
+local server_available = false
 
 lsp_installer.on_server_ready(function(server)
     local opts = {}
-
-    if server.name == "rust_analyzer" then
-        return
-    end
-
     server:setup(opts)
 end)

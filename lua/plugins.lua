@@ -27,7 +27,6 @@ return require('packer').startup(function()
     use 'onsails/lspkind-nvim'
     use 'ray-x/lsp_signature.nvim'
     use 'folke/lsp-trouble.nvim'
-    -- use 'kabouzeid/nvim-lspinstall'
     use 'williamboman/nvim-lsp-installer'
 
     -- Completion
@@ -42,7 +41,6 @@ return require('packer').startup(function()
 
     -- Programming language specific
     use 'rust-lang/rust.vim'
-    use 'simrat39/rust-tools.nvim'
 
     -- Highlighting
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
@@ -81,7 +79,6 @@ return require('packer').startup(function()
     use 'Mofiqul/dracula.nvim'
 
     -- Statusline
-    -- use 'hoob3rt/lualine.nvim'
     use 'famiu/feline.nvim'
 
     -- Autoclose tags
@@ -92,5 +89,8 @@ return require('packer').startup(function()
 
     -- Copilot
     use 'github/copilot.vim'
+
+    -- Formatting
+    use 'sbdchd/neoformat'
 
 end)

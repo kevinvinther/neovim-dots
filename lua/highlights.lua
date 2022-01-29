@@ -111,6 +111,14 @@ change_highlight('BufferLineCloseButtonSelected', 'bg', Colors.bg0)
 change_highlight('BufferLineIndicatorSelected', 'fg', Colors.blue)
 change_highlight('BufferLineIndicatorSelected', 'bg', Colors.bg0)
 
+local cmd = vim.cmd
+cmd("hi StatusLineAccent guifg=" .. Colors.bg0 .. " guibg=" .. Colors.blue)
+cmd("hi StatusLineInsertAccent guifg=" .. Colors.bg0 .. " guibg=" .. Colors.red)
+cmd("hi StatusLineVisualAccent guifg=" .. Colors.bg0 .. " guibg=" .. Colors.green)
+cmd("hi StatusLineReplaceAccent guifg=" .. Colors.bg0 .. " guibg=" .. Colors.red)
+cmd("hi StatusLineCmdLineAccent guifg=" .. Colors.bg0 .. " guibg=" .. Colors.yellow)
+cmd("hi StatuslineTerminalAccent guifg=" .. Colors.bg0 .. " guibg=" .. Colors.yellow)
+
 
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(

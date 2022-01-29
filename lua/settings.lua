@@ -49,4 +49,4 @@ vim.cmd('let g:sonokai_disable_italic_comment = 1')
 vim.o.completeopt = "menuone,noselect"          -- For nvim-compe
 vim.g.blamer_enabled = 1
 
--- vim.cmd('autocmd BufWritePre * Neoformat')      -- For Neoformat
+vim.cmd('autocmd BufWritePre * lua vim.lsp.buf.formatting()')      -- For formatting
