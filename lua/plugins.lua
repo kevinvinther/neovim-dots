@@ -93,4 +93,7 @@ return require('packer').startup(function()
     -- Formatting
     use 'sbdchd/neoformat'
 
+-- Yuck
+ use 'elkowar/yuck.vim'
+
 end)
