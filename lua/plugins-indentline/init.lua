@@ -1,5 +1,37 @@
-vim.g.indent_blankline_filetype_exclude = {'dashboard', 'symbolsoutline', 'terminal', 'alphanvim', 'alpha-nvim', 'alpha'}
-vim.g.indent_blankline_char = '│'
-
-vim.g.indent_blankline_use_treesitter = 1
-
+require("indent_blankline").setup {
+    char = "│",
+    filetype_exclude = {
+	    	'dashboard',
+	'symbolsoutline',
+	'terminal',
+	'alphanvim',
+	'alpha-nvim',
+	'alpha',
+	'dashboard',
+	'telescopePrompt',
+	'undotree',
+	'telescope',
+	'telescope-prompt',
+	        "startify",
+        "dashboard",
+        "dotooagenda",
+        "log",
+        "fugitive",
+        "gitcommit",
+        "packer",
+        "vimwiki",
+        "markdown",
+        "json",
+        "txt",
+        "vista",
+        "help",
+        "todoist",
+        "NvimTree",
+        "peekaboo",
+        "git",
+        "TelescopePrompt",
+        "undotree",
+        "flutterToolsOutline",
+        "", -- for all buffers without a file type
+    },
+}

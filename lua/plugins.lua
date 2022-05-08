@@ -29,11 +29,6 @@ return require('packer').startup(function()
     use 'folke/lsp-trouble.nvim'
     use 'williamboman/nvim-lsp-installer'
 
-    -- Completion
-    -- use 'hrsh7th/nvim-compe'
-    -- use { 'ms-jpq/coq_nvim', branch = 'coq'} -- main one
-    -- use { 'ms-jpq/coq.artifacts', branch= 'artifacts'} -- 9000+ Snippets
-
     -- Git
     use 'lewis6991/gitsigns.nvim'
     use 'APZelos/blamer.nvim'
@@ -74,7 +69,7 @@ return require('packer').startup(function()
     use 'sainnhe/sonokai'
     use 'folke/tokyonight.nvim'
     use "sainnhe/gruvbox-material"
-    use "joshdick/onedark.vim"
+    use "navarasu/onedark.nvim"
     use 'projekt0n/github-nvim-theme'
     use 'Mofiqul/dracula.nvim'
 
@@ -95,5 +90,9 @@ return require('packer').startup(function()
 
 -- Yuck
  use 'elkowar/yuck.vim'
+
+ --lualine
+ use 'nvim-lualine/lualine.nvim'
+
 
 end)

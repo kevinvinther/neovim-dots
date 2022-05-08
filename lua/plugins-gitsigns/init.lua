@@ -7,9 +7,10 @@ require("gitsigns").setup {
         changedelete = {hl = 'GitSignsChange', text = '┃', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
     },
     numhl = false,
-    watch_index = {
-        interval = 100
-    },
+watch_gitdir = {
+    interval = 1000,
+    follow_files = true
+  },
     sign_priority = 5,
     status_formatter = nil -- Use default
 }

@@ -226,7 +226,7 @@ elseif(UserColorscheme == "one dark") then
     Colors.grey1            = '#4b5263'
     Colors.grey2            = '#353a46'
 
-    vim.cmd([[colorscheme onedark]])
+    require('onedark').load()
 elseif(UserColorscheme == "github dark") then
     Colors.bg0_hh           = '#121417' -- Much darker background
     Colors.bg0_h            = '#1d2026' -- Darker background

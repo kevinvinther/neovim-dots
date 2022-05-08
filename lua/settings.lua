@@ -16,6 +16,15 @@
 -- I'll find out about this later
 --vim.cmd('set colorcolumn=80')                   -- Column at 80 characters
 vim.o.mouse = "nv"
+-- vim.cmd('set laststatus=3')
+
+local options = {
+	    laststatus = 3,
+    }
+
+for key, value in pairs(options) do
+    vim.opt[key] = value
+end
 
 vim.cmd('syntax on ')                           -- Syntax highlighting
 

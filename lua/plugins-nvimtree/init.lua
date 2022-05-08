@@ -1,20 +1,48 @@
 -- following options are the default
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
+
+vim.g.nvim_tree_special_files = {}
+vim.g.nvim_tree_add_trailing = 1
+vim.g.nvim_tree_show_icons = {
+    git = 1,
+    folders = 1,
+    files = 1,
+    folder_arrows = 1,
+}
+vim.g.nvim_tree_icons = {
+    default = "",
+    symlink = "",
+    git = {
+        unstaged = "[]",
+        staged = "[ﰶ]",
+        unmerged = "[]",
+        renamed = "[➜]",
+        untracked = "[]",
+        deleted = "[﯀]",
+        ignored = "[]",
+    },
+    folder = {
+        arrow_open = "",
+        arrow_closed = "",
+        default = "",
+        open = "",
+        empty = "",
+        empty_open = "",
+        symlink = "",
+        symlink_open = "",
+    },
+}
+
 require'nvim-tree'.setup {
   disable_netrw       = true,
   hijack_netrw        = true,
   open_on_setup       = false,
   ignore_ft_on_setup  = {},
-  auto_close          = false,
   open_on_tab         = false,
   hijack_cursor       = false,
   update_cwd          = false,
-  update_to_buf_dir   = {
-    enable = true,
-    auto_open = true,
-  },
   diagnostics = {
-    enable = false,
+    enable = true,
     icons = {
       hint = "",
       info = "",
@@ -45,7 +73,6 @@ require'nvim-tree'.setup {
     height = 30,
     hide_root_folder = false,
     side = 'left',
-    auto_resize = false,
     mappings = {
       custom_only = false,
       list = {}

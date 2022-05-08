@@ -33,16 +33,17 @@ require('plugins-lsptrouble')
 require('plugins-symbolsoutline')
 require('plugins-bufferline')
 require('plugins-lspsignature')
-require('plugins-whichkey')
+-- require('plugins-whichkey')
 require('plugins-todocomments')
 require('plugins-toggleterm')
 require('plugins-nvimtsautotag')
-require('colorscheme')
 -- require('plugins-feline')
+require('plugins-lualine')
 require('plugins-nvimlspinstall')
 require('plugins-nvimtsrainbow')
-require('statusline')
-if(not NonConfigColorscheme) then
+require('colorscheme')
+-- require('statusline')
+if (not NonConfigColorscheme) then
     require('highlights')
 end
 
